@@ -4,7 +4,8 @@
     align-items: center;
     justify-content: center;
 }
-.home-container > button {
+
+.home-container>button {
     margin-top: 1rem;
     padding: 0.7rem;
     border: #16DB65 2px solid;

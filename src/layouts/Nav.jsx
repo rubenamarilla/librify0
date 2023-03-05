@@ -17,13 +17,13 @@ const Nav = () => {
           </h1>
         </Link>
         <ul className="nav-lista">
-          <li onClick={(e) => handleLi("song")}>Top Canciones</li>
-          <li onClick={(e) => handleLi("artist")}>Top Artistas</li>
-          <li onClick={(e) => handleLi("played")}>
+          <li onClick={() => handleLi("song")}>Top Canciones</li>
+          <li onClick={() => handleLi("artist")}>Top Artistas</li>
+          <li onClick={() => handleLi("played")}>
             Reproducidos recientemente
           </li>
         </ul>
-        <button className="log-out">Cerrar Sesión</button>
+        <button className="log-out" onClick={()=>navigate("/")}>Cerrar Sesión</button>
       </div>
       <Outlet />
     </div>

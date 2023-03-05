@@ -8,9 +8,11 @@
     bottom: 30%;
     top: 30%;
 }
-.signIn-container > * {
+
+.signIn-container>* {
     margin-bottom: 1rem;
 }
+
 .sign-in {
     margin: auto;
     padding: 0.5rem;

@@ -8,11 +8,9 @@ const Artists = () => {
         <div className="column">
           <h2>1 mes</h2>
           <h2>6 meses</h2>
-          <h2>todo el tiempo</h2>
+          <h2>todo</h2>
         </div>
-        <div className="response-content">
-          content
-        </div>
+        <div className="response-content">content</div>
       </div>
     </div>
   );
