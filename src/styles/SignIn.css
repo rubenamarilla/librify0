@@ -13,7 +13,8 @@
     margin-bottom: 1rem;
 }
 
-.sign-in {
+
+.sign-in { /* button */
     margin: auto;
     padding: 0.5rem;
     padding-left: 1rem;
@@ -25,4 +26,8 @@
     font-size: large;
     font-weight: 600;
     cursor: pointer;
+}
+
+.sign-in:hover {
+    font-size: larger;
 }
