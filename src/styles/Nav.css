@@ -48,6 +48,16 @@
     cursor: pointer;
 }
 
+/* El usuario esta sobre el enlace */
+.nav-lista>li:hover {
+    font-weight: bold;
+}
+
+/* Enlaces activos */
+.nav-lista>li:active {
+    font-weight: 400;
+}
+
 .material-symbols-outlined {
     font-size: 2.5rem;
 }
@@ -63,4 +73,14 @@
     padding-left: 0.8rem;
     padding-right: 0.8rem;
     cursor: pointer;
+}
+
+/* El usuario esta sobre el enlace */
+.log-out:hover {
+    box-shadow: white 0px 0px 5px;
+}
+
+/* Enlaces activos */
+.log-out:active {
+    border: whitesmoke solid 2px;
 }
