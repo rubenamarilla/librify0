@@ -1,0 +1,30 @@
+.content-container {
+    display: flex;
+    width: 65%;
+    border: gray 2px solid;
+    border-radius: 5px;
+    padding: 2rem;
+    align-items: center;
+    flex-direction: column;
+}
+.content-container > h1 {
+    margin-bottom: 1rem;
+}
+.column-father {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+.column {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.column > h2 {
+    padding: 1rem;
+    display: flex;
+}
