@@ -23,7 +23,7 @@ const Nav = () => {
             Reproducidos recientemente
           </li>
         </ul>
-        <button>Cerrar Sesión</button>
+        <button className="log-out">Cerrar Sesión</button>
       </div>
       <Outlet />
     </div>

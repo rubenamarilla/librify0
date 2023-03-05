@@ -44,3 +44,12 @@
 .material-symbols-outlined {
     font-size: 2.5rem;
 }
+.log-out {
+    border: black 3px solid;
+    border-radius: 25px;
+    color: whitesmoke;
+    background-color: black;
+    font-size: medium;
+    font-weight: 600;
+    padding: 0.4rem;
+}

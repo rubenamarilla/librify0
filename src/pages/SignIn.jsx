@@ -1,11 +1,14 @@
-import React from 'react'
+import React from "react";
+import "../styles/SignIn.css";
 
 const SignIn = () => {
   return (
-    <div>
-      <h1>Sign In</h1>
+    <div className="signIn-container">
+      <h1>Bienvenido a Librify</h1>
+      <h3>Inicia sesión con spotify para continuar</h3>
+      <button className="sign-in">Iniciar sesion con Spotify</button>
     </div>
-  )
-}
+  );
+};
 
-export default SignIn
+export default SignIn;

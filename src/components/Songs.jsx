@@ -11,10 +11,9 @@ const Songs = () => {
           <h2>6 meses</h2>
           <h2>todo el tiempo</h2>
         </div>
-        <div>
+        <div className="response-content">
           content
         </div>
-
       </div>
     </div>
   );

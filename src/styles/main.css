@@ -6,6 +6,7 @@
     padding: 2rem;
     align-items: center;
     flex-direction: column;
+    background-color: black;
 }
 .content-container > h1 {
     margin-bottom: 1rem;
@@ -27,4 +28,13 @@
 .column > h2 {
     padding: 1rem;
     display: flex;
+}
+.response-content {
+    border: 2px solid gray;
+    border-radius: 5px;
+    padding: 1rem;
+    width: 95%;
+}
+.played {
+    width: 50%;
 }
