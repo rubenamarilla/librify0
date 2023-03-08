@@ -23,9 +23,3 @@
     font-weight: bold;
     padding: 1rem;
 }
-
-/* Enlaces activos */
-.home-container>button:active {
-    font-weight: 400;
-    padding: 1rem;
-}

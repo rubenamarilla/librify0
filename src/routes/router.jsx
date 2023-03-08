@@ -25,17 +25,17 @@ const router = createBrowserRouter([
         errorElement: <ErrorPage />,
       },
       {
-        path: "/home/song",
+        path: "/home/song/:token",
         element: <Songs />,
         ErrorElement: <ErrorPage />,
       },
       {
-        path: "/home/artist",
+        path: "/home/artist/:token",
         element: <Artists />,
         errorElement: <ErrorPage />,
       },
       {
-        path: "/home/played",
+        path: "/home/played/:token",
         element: <Played />,
         errorElement: <ErrorPage />,
       },

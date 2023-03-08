@@ -11,6 +11,7 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.8.2",
     "react-scripts": "5.0.1",
+    "spotify-web-api-js": "^1.5.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -39,7 +40,6 @@
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.jsx",
-  "devDependencies": {},
   "author": "Ruben Amarilla",
   "license": "ISC"
 }
