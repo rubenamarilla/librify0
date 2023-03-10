@@ -1,11 +1,10 @@
 import React, { useEffect } from "react";
 import { Link, Outlet, useNavigate } from "react-router-dom";
+import { reactLocalStorage } from "reactjs-localstorage";
 import "../styles/Nav.css";
 
 const Nav = () => {
   const navigate = useNavigate();
-
-
 
   const getTokenFromUrl = () => {
     return window.location.hash
@@ -18,18 +17,17 @@ const Nav = () => {
       }, {});
   };
 
-
   useEffect(() => {
-    console.log(getTokenFromUrl());
-    // window.location.hash = access_token
+    const access_token = getTokenFromUrl().access_token;
+    reactLocalStorage.set("access_token", access_token);
 
-    // spotifyApi.setAccessToken(access_token)
-    // spotifyApi.getMyTopTracks({limit: "50", time_range: "long_term"}).then(response => console.log(response))
+    // window.location.hash = ""
   }, []);
 
   const handleLi = (value) => {
-    navigate(`/home/${value}/${getTokenFromUrl().access_token}`);
+    navigate(`/home/${value}`);
   };
+
   return (
     <div className="container">
       <div className="nav-container">

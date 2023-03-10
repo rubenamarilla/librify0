@@ -1,20 +1,20 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
 import SpotifyWebApi from "spotify-web-api-js";
+import { reactLocalStorage } from "reactjs-localstorage";
+
 
 const Played = () => {
-  const { token } = useParams();
+  const access_token = reactLocalStorage.get("access_token")
   const spotifyApi = new SpotifyWebApi();
   const [songs, setSongs] = useState([]);
-  spotifyApi.setAccessToken(token);
+  spotifyApi.setAccessToken(access_token);
 
   useEffect(() => {
     spotifyApi
       .getMyRecentlyPlayedTracks({ limit: "50" })
-      .then((response) => {
-        setSongs(response.items);
-        console.log(songs);
-      });
+      .then((response) => 
+        setSongs(response.items)
+      );
   }, []);
 
   return (

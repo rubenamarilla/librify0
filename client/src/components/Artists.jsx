@@ -1,30 +1,25 @@
 import React, { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import SpotifyWebApi from "spotify-web-api-js";
-import "../styles/Artists.css"
+import "../styles/Artists.css";
+import { reactLocalStorage } from "reactjs-localstorage";
 
 const Artists = () => {
-  const { token } = useParams();
+  const access_token = reactLocalStorage.get("access_token");
   const spotifyApi = new SpotifyWebApi();
   const [artists, setArtists] = useState([]);
-  spotifyApi.setAccessToken(token);
+  spotifyApi.setAccessToken(access_token);
 
   useEffect(() => {
     spotifyApi
       .getMyTopArtists({ limit: "50", time_range: "short_term" })
-      .then((response) => {
-        setArtists(response.items);
-        console.log(artists);
-      });
+      .then((response) => setArtists(response.items));
   }, []);
 
   const selectTime = (time) => {
     spotifyApi
       .getMyTopArtists({ limit: "50", time_range: time })
-      .then((response) => {
-        setArtists(response.items);
-        console.log(artists);
-      });
+      .then((response) => setArtists(response.items));
   };
   return (
     <div className="content-container">

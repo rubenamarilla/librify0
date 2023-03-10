@@ -1,30 +1,24 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
 import SpotifyWebApi from "spotify-web-api-js";
+import { reactLocalStorage } from "reactjs-localstorage";
 import "../styles/main.css";
 
 const Songs = () => {
-  const { token } = useParams();
+  const access_token = reactLocalStorage.get("access_token");
   const spotifyApi = new SpotifyWebApi();
   const [songs, setSongs] = useState([]);
-  spotifyApi.setAccessToken(token);
+  spotifyApi.setAccessToken(access_token);
 
   useEffect(() => {
     spotifyApi
       .getMyTopTracks({ limit: "50", time_range: "short_term" })
-      .then((response) => {
-        setSongs(response.items);
-        console.log(songs);
-      });
+      .then((response) => setSongs(response.items));
   }, []);
 
   const selectTime = (time) => {
     spotifyApi
       .getMyTopTracks({ limit: "50", time_range: time })
-      .then((response) => {
-        setSongs(response.items);
-        console.log(songs);
-      });
+      .then((response) => setSongs(response.items));
   };
 
   return (
@@ -47,16 +41,16 @@ const Songs = () => {
               </tr>
             </thead>
             <tbody>
-              {
-                songs.map((song, idx)=> (
-                  <tr key={idx}>
-                    <td><img alt={song.name} src={song.album.images[2].url}/></td>
-                    <td>{song.name}</td>
-                    <td>{song.artists[0].name}</td>
-                    <td>{song.album.name}</td>
-                  </tr>
-                ))
-              }
+              {songs.map((song, idx) => (
+                <tr key={idx}>
+                  <td>
+                    <img alt={song.name} src={song.album.images[2].url} />
+                  </td>
+                  <td>{song.name}</td>
+                  <td>{song.artists[0].name}</td>
+                  <td>{song.album.name}</td>
+                </tr>
+              ))}
             </tbody>
           </table>
         </div>
