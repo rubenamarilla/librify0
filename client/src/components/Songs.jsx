@@ -13,7 +13,7 @@ const Songs = () => {
     spotifyApi
       .getMyTopTracks({ limit: "50", time_range: "short_term" })
       .then((response) => setSongs(response.items));
-  }, []);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   const selectTime = (time) => {
     spotifyApi

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Link, Outlet, useNavigate } from "react-router-dom";
 import { reactLocalStorage } from "reactjs-localstorage";
 import "../styles/Nav.css";
@@ -6,27 +6,14 @@ import "../styles/Nav.css";
 const Nav = () => {
   const navigate = useNavigate();
 
-  const getTokenFromUrl = () => {
-    return window.location.hash
-      .substring(1)
-      .split("&")
-      .reduce((initial, item) => {
-        let parts = item.split("=");
-        initial[parts[0]] = decodeURIComponent(parts[1]);
-        return initial;
-      }, {});
-  };
-
-  useEffect(() => {
-    const access_token = getTokenFromUrl().access_token;
-    reactLocalStorage.set("access_token", access_token);
-
-    // window.location.hash = ""
-  }, []);
-
   const handleLi = (value) => {
     navigate(`/home/${value}`);
   };
+
+  const singOut = ()=> {
+    reactLocalStorage.clear()
+    navigate("/")
+  }
 
   return (
     <div className="container">
@@ -41,11 +28,12 @@ const Nav = () => {
           <li onClick={() => handleLi("artist")}>Top Artistas</li>
           <li onClick={() => handleLi("played")}>Reproducidos recientemente</li>
         </ul>
-        <button className="log-out" onClick={() => navigate("/")}>
+        <button className="log-out" onClick={singOut}>
           Cerrar Sesión
         </button>
       </div>
       <Outlet />
+      <footer>contenido here</footer>
     </div>
   );
 };

@@ -15,7 +15,7 @@ const Played = () => {
       .then((response) => 
         setSongs(response.items)
       );
-  }, []);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <div className="content-container">

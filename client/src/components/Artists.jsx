@@ -14,7 +14,8 @@ const Artists = () => {
     spotifyApi
       .getMyTopArtists({ limit: "50", time_range: "short_term" })
       .then((response) => setArtists(response.items));
-  }, []);
+      
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   const selectTime = (time) => {
     spotifyApi
