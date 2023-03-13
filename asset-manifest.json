@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/librify/static/css/main.2854f485.css",
-    "main.js": "/librify/static/js/main.971ff63b.js",
-    "static/media/logo.png": "/librify/static/media/logo.a93f8a39c6a6fe3cd4ee.png",
-    "index.html": "/librify/index.html",
-    "main.2854f485.css.map": "/librify/static/css/main.2854f485.css.map",
-    "main.971ff63b.js.map": "/librify/static/js/main.971ff63b.js.map"
+    "main.css": "/static/css/main.2854f485.css",
+    "main.js": "/static/js/main.f5648492.js",
+    "static/media/logo.png": "/static/media/logo.a93f8a39c6a6fe3cd4ee.png",
+    "index.html": "/index.html",
+    "main.2854f485.css.map": "/static/css/main.2854f485.css.map",
+    "main.f5648492.js.map": "/static/js/main.f5648492.js.map"
   },
   "entrypoints": [
     "static/css/main.2854f485.css",
-    "static/js/main.971ff63b.js"
+    "static/js/main.f5648492.js"
   ]
 }
