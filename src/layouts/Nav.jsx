@@ -48,9 +48,6 @@ const Nav = () => {
       <footer>
         <h2>©2023 - Librify</h2>
         <p>Librify utiliza la API de Spotify para fines de entretenimiento <br /> Librify no tiene relaciones con Spotify</p>
-        <div>
-
-        </div>
       </footer>
     </div>
   );
