@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/SignIn.css";
+import logo from "../images/logo.png";
 
 const SignIn = () => {
   const authEndPoint = "https://accounts.spotify.com/authorize";
@@ -14,10 +15,11 @@ const SignIn = () => {
 
   return (
     <div className="signIn-container">
+      <img src={logo} alt="logo" width={"500rem"} />
       <h1>Bienvenido a Librify</h1>
-      <h3>Inicia sesión con spotify para continuar</h3>
+      <h3>Inicia sesión con Spotify para continuar</h3>
       <Link className="sign-in" to={login}>
-        Iniciar sesion con Spotify
+        Iniciar sesión con Spotify
       </Link>
     </div>
   );

@@ -21,6 +21,7 @@
     padding: 1rem;
     border: 2px solid gray;
     border-radius: 5px;
+    width: 90%;
 }
 
 .column {
@@ -36,12 +37,29 @@
 }
 
 .response-content {
-    border: 2px solid gray;
+    /* border: 2px solid gray; */
     border-radius: 5px;
     padding: 1rem;
     width: 95%;
+    min-height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.loadingDots {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .played {
     width: 50%;
+}
+
+.activo {
+    background-color: rgba(23, 255, 42, 0.37);
+    border-radius: 1rem;
+    padding: 10px;
+    margin-bottom: 1rem;
 }

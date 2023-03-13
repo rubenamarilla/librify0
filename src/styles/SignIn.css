@@ -5,14 +5,13 @@
     position: absolute;
     left: 10%;
     right: 10%;
-    bottom: 30%;
-    top: 30%;
+    bottom: 10%;
+    top: 10%;
 }
 
 .signIn-container>* {
     margin-bottom: 1rem;
 }
-
 
 .sign-in { /* button */
     margin: auto;
@@ -26,6 +25,7 @@
     font-size: large;
     font-weight: 600;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .sign-in:hover {

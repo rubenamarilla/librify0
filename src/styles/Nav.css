@@ -59,7 +59,7 @@
 }
 
 .material-symbols-outlined {
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 .log-out {
@@ -83,4 +83,31 @@
 /* Enlaces activos */
 .log-out:active {
     border: whitesmoke solid 2px;
+}
+
+footer {
+    margin-top: 2rem;
+    border-top: solid gray 2px;
+    border-left: solid gray 2px;
+    border-right: solid gray 2px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    width: 67%;
+    position: absolute;
+    bottom: 0%;
+    padding: 1rem;
+}
+
+footer>* {
+    font-size: small;
+}
+
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    margin: 0;
+    margin-bottom: 110px;
 }

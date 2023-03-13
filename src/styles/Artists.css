@@ -1,0 +1,13 @@
+.artist-item {
+
+    margin-bottom: 0.7rem;
+}
+.artists-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.artist-img {
+    width: 100%;
+}
