@@ -5,7 +5,7 @@ import logo from "../images/logo.png";
 
 const SignIn = () => {
   const authEndPoint = "https://accounts.spotify.com/authorize";
-  const redirectURIdeploy = "https://librify.netlify.app/home";
+  const redirectURIdeploy = "https://librify1.netlify.app/home";
   const redirectURI = "http://localhost:3000/home"
   const clientID = "a89f4d1644a74252a58c731bc82d8745";
   const scope = ["user-top-read", "user-read-recently-played"];
