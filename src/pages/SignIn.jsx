@@ -5,11 +5,12 @@ import logo from "../images/logo.png";
 
 const SignIn = () => {
   const authEndPoint = "https://accounts.spotify.com/authorize";
-  const redirectURI = "https://danielamarilla.github.io/home";
+  const redirectURIdeploy = "https://librify.netlify.app/home";
+  const redirectURI = "http://localhost:3000/home"
   const clientID = "a89f4d1644a74252a58c731bc82d8745";
   const scope = ["user-top-read", "user-read-recently-played"];
 
-  const login = `${authEndPoint}?client_id=${clientID}&redirect_uri=${redirectURI}&scope=${scope.join(
+  const login = `${authEndPoint}?client_id=${clientID}&redirect_uri=${redirectURIdeploy}&scope=${scope.join(
     "%20"
   )}&response_type=token&show_dialog=true`;
 
