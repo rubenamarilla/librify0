@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+#Librify
+Para inicializar el proyecto ejecutar el comando: npm start
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

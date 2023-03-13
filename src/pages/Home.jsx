@@ -36,6 +36,10 @@ const Home = () => {
         <button onClick={() => redirect("played")}>
           Reproducidas recientemente
         </button>
+        {/* <div>
+          <h2>Tu propio ranking personal</h2>
+          <p>Revisa tus canciones y artistas más escuchados y cambia entre 3 periodos de tiempo. Tus datos son actualizados aproximadamente cada día</p>
+        </div> */}
       </div>
     </div>
   );

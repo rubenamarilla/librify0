@@ -5,7 +5,7 @@ import logo from "../images/logo.png";
 
 const SignIn = () => {
   const authEndPoint = "https://accounts.spotify.com/authorize";
-  const redirectURI = "http://localhost:3000/home";
+  const redirectURI = "https://danielamarilla.github.io/librify/home";
   const clientID = "a89f4d1644a74252a58c731bc82d8745";
   const scope = ["user-top-read", "user-read-recently-played"];
 
