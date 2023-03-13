@@ -15,27 +15,27 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
   },
   {
-    path: "/home",
+    path: "/home/",
     element: <Nav />,
     errorElement: <ErrorPage />,
     children: [
       {
-        path: "/home",
+        path: "/home/",
         element: <Home />,
         errorElement: <ErrorPage />,
       },
       {
-        path: "/home/song",
+        path: "/home/song/",
         element: <Songs />,
         ErrorElement: <ErrorPage />,
       },
       {
-        path: "/home/artist",
+        path: "/home/artist/",
         element: <Artists />,
         errorElement: <ErrorPage />,
       },
       {
-        path: "/home/played",
+        path: "/home/played/",
         element: <Played />,
         errorElement: <ErrorPage />,
       },
